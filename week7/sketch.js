@@ -13,27 +13,22 @@ function draw() {
     
     var x = 10, y = 10;
     
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 4; i++) {
         for (var h = 0; h < 2; h++) {
-        drawWindow(x + 130 * i, y + 250 * h, ww, wh);
+        drawWindow(x + 150 * i, y + 300 * h, ww, wh);
         }
 
     }
 }
 
 function drawWindow(x, y, ww, wh) {
-    
-         
         
-         
+         //Stroke();
          fill(86, 34, 18);
          rect(x, y, ww/2, wh/2);
-    
-
          
          
-         //fill(255, 161, 114);
-         fill("lightyellow");
+         fill(255, 161, 114);
          rect(x + 6, y, ww/2.5, wh/3.5);
          rect(x + 6, y + wh/8 * 2.5, ww/2.5, wh/6);
          
@@ -46,11 +41,6 @@ function drawWindow(x, y, ww, wh) {
          rect(x + 1, y + 106, ww/2.1, wh/180);
          rect(x + 1, y + 109, ww/2.1, wh/180);
          rect(x + 1, y + 112, ww/2.1, wh/180);
-    
-    
-         fill("black");
-         rect(x-10, y, ww/1.5, wh/16);
-    
 
 
 }
